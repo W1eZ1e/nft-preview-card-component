@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+body{
+    background-color: var(--Very-dark-blue-main);
+    font-family: "Outfit" ,sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 40px;
+    
+
+}
+img{
+    max-width: 375px;
+}
+
+.container{
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 7px #0E172A,;
+    margin: 20px;
+    padding: 20px;
+    
+    
+
+}
+.container img{
+    margin-bottom: 25px;
+    border-radius: 10px;
+    
+       
+}
+
+    /*active-states*/
+
+.container .active{
+    position: relative;
+}
+.container .active div{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 55%);
+    border-radius: 10px;
+    width: 100%;
+    height: calc(100% - 29px);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .active div:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.container .active div img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.container h1{
+    color: var(--White);
+    margin-bottom: 25px;
+    
+}
+.container h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.container p{
+    color: var(--Soft-blue);
+    margin-bottom: 25px;
+}
+
+/*end-of-active-states*/
+
+.currency-time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--Very-dark-blue-line);
+    margin-bottom: 15px;
+}
+.currency-time img{
+    margin:2px 5px 0px 0px;
+}
+
+#eth{
+    color: var(--Cyan);
+    
+}
+.avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+.avatar img{
+    width: 45px;
+    margin-right: 20px;
+    border: 2px solid var(--White);
+    border-radius: 100%;
+}
+span{
+    color: var(--White);
+}
+span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+.attribution {   
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 20px;
+    color: var(--White);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
